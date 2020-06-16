@@ -6,8 +6,8 @@ message("CMAKE_CURRENT_SOURCE_DIR is ${CMAKE_CURRENT_SOURCE_DIR}")
 
 message("--------------------------------------------------------------------------")
 
-# 				  output var							Directory to get paths relative to			Globbing expression
-file(GLOB_RECURSE IncludeDirRelToSourc		RELATIVE 	"${CMAKE_CURRENT_SOURCE_DIR}" 				"${CMAKE_CURRENT_SOURCE_DIR}/include/*")
+#                   output var                              Directory to get paths relative to      Globbing expression
+file(GLOB_RECURSE   IncludeDirRelToSourc        RELATIVE    "${CMAKE_CURRENT_SOURCE_DIR}"           "${CMAKE_CURRENT_SOURCE_DIR}/include/*")
 
 # Note: https://stackoverflow.com/a/17666004
 # If you "${list}" instead of ${list}, it will be printed with delimeters, so you'll get the much more readable "a;b;c;d" instead of "abcd"
